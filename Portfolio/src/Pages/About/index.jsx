@@ -33,7 +33,7 @@ const About=()=>{
 <Stack className="hobbi" gap="10%" alignItems="center" flexDirection="row">
 <div data-aos="flip-left">
 
-  <Stack marginBottom="20px" alignItems="center" textAlign="center" marginLeft="50px" padding="20px" boxShadow="3px 3px red, -1em 0 .4em olive;"  width="250px" gap='10px'>
+  <Stack className="hobibox" marginBottom="20px" alignItems="center" textAlign="center" marginLeft="50px" padding="20px" boxShadow="3px 3px red, -1em 0 .4em olive;"  width="250px" gap='10px'>
     <Typography variant="h4">
         Hobbim
     </Typography>
