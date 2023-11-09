@@ -6,6 +6,7 @@ import Projects from "../Pages/Projects"
 import Skils from "../Pages/Skils"
 import Contact from "../Pages/Contact"
 import Experience from "../Pages/Experience"
+import Cv from "../Pages/Cv"
 
 const Routing = () => {
     return (
@@ -17,6 +18,7 @@ const Routing = () => {
                 <Route path="/skils" element={<Skils />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/experience" element={<Experience />} />
+                <Route path="/cv" element={<Cv />} />
             </Routes>
         </>
     )

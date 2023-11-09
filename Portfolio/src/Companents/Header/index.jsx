@@ -29,6 +29,7 @@ const Header=()=>{
               >
                 <NavLink to="/" title="Əsas səhifə" />
                 <NavLink to="/about" title="Haqqımda" />
+                <NavLink to="/cv"title="Cv" />
                 <NavLink to="/projects" title="Proyektlər" />
                 <NavLink to="/skils" title="Bacarıqlar" />
                 <NavLink to="/experience" title="Təcrübə" />

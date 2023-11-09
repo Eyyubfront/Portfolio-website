@@ -26,8 +26,8 @@ const Home=()=>{
 <Stack  className="vebphotoshome" margin="10px" alignItems="center" flexDirection="row" gap="30px">
 <Box >
 <div data-aos="zoom-out-left">
-    <Typography fontFamily=" serif" variant="h4"  width="100%">
-            Veb saytıma xoş gəldiniz. Burada siz mənim haqqımda məlumat öyrənə bilərsiniz. Cv-im , bacarıqlarım, layihələrim və sonda mənimlə əlaqə saxlaya bilərsiniz.
+    <Typography fontFamily=" serif" variant="h5"  width="100%">
+    Veb saytıma xoş gəldiniz. Buradan mənim haqqımda daha çox məlumat əldə edə və mənim CV-im, bacarıqlarım və həyata keçirdiyim layihələr barədə ətraflı məlumat tapa bilərsiniz. Bu sahədəki həvəsimi və marağımı daha yaxşı anlamaq üçün bu saytı ziyarət edərkən mənə dair daha çox şey öyrənə bilərsiniz. Əgər mənimlə əlaqə saxlamaq və ya əlavə suallarınız varsa, zəhmət olmasa, əlaqə bölməsindən mənimlə əlaqə saxlaya bilərsiniz.
     </Typography>
 </div>
 </Box>

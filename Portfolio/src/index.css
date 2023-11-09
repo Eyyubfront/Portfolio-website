@@ -116,6 +116,13 @@ body {
 .contact{
   text-align: center !important;
 }
+.cvs{
+  text-align: center !important;
+}
+.cvphoto{
+  width: 100% !important;
+  margin-left: 0% !important;
+}
   .megabox{
     height: 250px !important;
   }
