@@ -62,7 +62,7 @@ const About=()=>{
 </div>
 
     <Typography fontFamily="fangsong" variant="h4">
-        Sizin üçün qısa motivasi: Dayanma, yatma , çalış , araşdır.
+        Sizin üçün qısa motivasiya: Dayanma!, yatma! , çalış! , araşdır! .
     </Typography>
 
 </Stack>

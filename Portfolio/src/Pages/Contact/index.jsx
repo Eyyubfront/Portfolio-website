@@ -12,7 +12,7 @@ const Contact=()=>{
             </Typography>
             <Box padding="15px">
 
-            <Stack className="contactbox" marginLeft="30%" marginTop="5%" border="1px solid" width="40%" padding="50px" boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" gap="20px">
+            <Stack className="contactbox" marginLeft="30%" marginTop="5%" border="1px solid" width="45%" padding="50px" boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" gap="25px">
 
             <Stack className="contac"  flexDirection="row" alignItems="center" gap="10px">
                 <Box padding="7px" width="40px" border="1px solid">
