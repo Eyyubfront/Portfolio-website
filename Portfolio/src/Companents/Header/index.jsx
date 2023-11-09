@@ -31,7 +31,7 @@ const Header=()=>{
                 <NavLink to="/about" title="Haqqımda" />
                 <NavLink to="/projects" title="Proyektlər" />
                 <NavLink to="/skils" title="Bacarıqlar" />
-                <NavLink to="/basket" title="Təcrübə" />
+                <NavLink to="/experience" title="Təcrübə" />
                 <NavLink to="/contact"title="Əlaqə" />
               </Stack>
               <BurgerMenu/>

@@ -16,14 +16,14 @@ const Projects=()=>{
         <>
         <PageContainer>
        
-<Typography marginTop="20px" variant="h5" textAlign="center">
-    Xoş izləmələr
+<Typography  className="fronthome" marginLeft="30px" marginTop="20px" variant="h4" >
+   Proyektlərim
 </Typography>
 <Stack className="projectlineone" padding="30px" flexDirection="row" gap="10%" alignItems="center">
 
 <a href="https://global-travel-project.vercel.app/">
 
-<Box padding="10px"  className="travelbox" width="320px" marginTop="10px"  boxShadow="3px 1px red, -1em 0 .4em blue;" >
+<Box padding="10px"  className="travelbox" width="320px" marginTop="10px"  boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" >
 <div data-aos="zoom-in">
 <img style={{width:"100%"}} src={travels} alt="" />
 <Typography color="black" textAlign="center" variant="h5" fontFamily="serif">

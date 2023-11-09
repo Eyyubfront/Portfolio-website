@@ -11,7 +11,10 @@ const About=()=>{
     return(
         <>
         <PageContainer>
-<Stack className="hobbi" padding="40px" flexDirection="row" alignItems="center">
+        <Typography className="fronthome" sx={{fontFamily:" TradeGothic LT Extended"}} marginTop="20px" marginLeft="40px" variant="h4">
+             Haqqımda
+            </Typography>
+<Stack className="hobbi" padding="30px" flexDirection="row" alignItems="center">
 
         <div data-aos="zoom-out-right">
 

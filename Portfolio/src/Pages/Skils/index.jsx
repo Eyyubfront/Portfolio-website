@@ -10,6 +10,9 @@ const Skils=()=>{
     return(
         <>
         <PageContainer>
+        <Typography className="fronthome" sx={{fontFamily:" TradeGothic LT Extended"}} marginTop="20px" marginLeft="40px" variant="h4">
+            Bacarıqlar
+            </Typography>
         <div data-aos="zoom-in-right">
 
 <Stack padding="20px" alignItems="center" justifyContent="center" gap="15px">

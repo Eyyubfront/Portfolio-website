@@ -64,7 +64,7 @@ const BurgerMenu = () => {
                 <Box border="1px solid gray">
 
 </Box>
-                <NavLink to="/basket" title="Təcrübə" />
+                <NavLink to="/experience" title="Təcrübə" />
                 <Box border="1px solid gray">
 
 </Box>

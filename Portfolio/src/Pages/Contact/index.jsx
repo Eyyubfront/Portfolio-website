@@ -7,7 +7,7 @@ const Contact=()=>{
     return(
         <>
         <PageContainer>
-            <Typography variant="h4" marginTop='40px' textAlign="center">
+            <Typography marginLeft="20px" className="contact" variant="h4" marginTop='40px' >
                 Əlaqə üçün
             </Typography>
             <Box padding="15px">

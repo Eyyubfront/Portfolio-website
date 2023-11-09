@@ -14,12 +14,9 @@ import {
 const Footer=()=>{
     return(
         <>
-       
  <Box className="footercolorhight" height="171px" padding="20px" sx={{background:"linear-gradient(278deg, rgb(11, 63, 55) -7.03%, rgb(203, 141, 98) 136.33%);"}}>
 <Stack alignItems="center" flexDirection="column" gap="15px">
-
           <Box border="1px solid black" width="250px">
-
           </Box>
           <Typography fontFamily='monospace' variant="h4" color="white">
             Bayramov Eyyub
@@ -28,9 +25,6 @@ const Footer=()=>{
 
 </Box>
 </Stack>
-
-
-
 <Stack className="fotersicon" flexDirection="row" gap="10px">
     <a  href="https://github.com/Eyyubfront?tab=repositories">
 
@@ -51,11 +45,9 @@ const Footer=()=>{
     </Box>
     </a>
 </Stack>
-
 <Typography fontFamily="cursive" className="junior" position="absolute" padding="0 10px" right="0" variant="h6" marginTop="15px" color="white">
-    Junior Frontend Developer
+    Junior Front-End Developer
 </Typography>
-
         </Box>
         </>
     )

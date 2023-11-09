@@ -17,6 +17,9 @@ body {
 .archbox:hover{
   transform: scale(0.9);
 }
+.musicbox:hover{
+  transform: scale(0.9);
+}
 .megabox:hover{
   transform: scale(0.9);
 }
@@ -88,6 +91,9 @@ body {
     margin-top: 52px !important;
   }
  
+  .fronthome{
+    text-align: center !important;
+  }
   .travelbox,
    .megabox{
     width: 100% !important;
@@ -100,7 +106,16 @@ body {
     width: 100% !important;
     padding: 10px !important;
   }
-
+  .jedpractice{
+    text-align: center !important;
+  }
+  .practicetext{
+    width: 90% !important;
+    text-align: center !important;
+  }
+.contact{
+  text-align: center !important;
+}
   .megabox{
     height: 250px !important;
   }
