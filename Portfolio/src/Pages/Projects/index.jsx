@@ -35,7 +35,7 @@ const Projects=()=>{
 
 <a href="https://mega-texnika.netlify.app/">
 
-<Box height="280px" padding="10px"  className="megabox" width="400px" marginTop="10px"  boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" >
+<Box height="273px" padding="10px"  className="megabox" width="400px" marginTop="10px"  boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" >
 <div data-aos="zoom-in">
 <img style={{width:"100%"}} src={texnikamega} alt="" />
 <Typography color="black" textAlign="center" variant="h5" fontFamily="serif">
