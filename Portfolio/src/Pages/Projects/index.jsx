@@ -73,7 +73,7 @@ Arch-Baku
 
 <a href="https://copper-projects-nv9q.vercel.app/">
 
-<Box padding="10px" marginLeft="15%" className="travelbox" width="60%" marginTop="10px"  boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" >
+<Box padding="10px" marginLeft="15%" className="coperbox" width="60%" marginTop="10px"  boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" >
 <div data-aos="zoom-in">
 <img style={{width:"96%"}} src={coper} alt="" />
 <Typography color="black" textAlign="center" variant="h5" fontFamily="serif">

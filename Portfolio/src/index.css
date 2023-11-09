@@ -102,7 +102,7 @@ body {
     width: 100% !important;
   }
   .archbox{
-    height: 220px !important;
+    height: 227px !important;
     width: 100% !important;
     padding: 10px !important;
   }
@@ -125,10 +125,16 @@ body {
   margin-left: 0% !important;
 }
   .megabox{
-    height: 257px !important;
+    height: 259px !important;
   }
   .hobibox{
     margin-left: 10px !important;
+  }
+  .coperbox{
+    margin-left: -3% !important;
+    width: 100% !important;
+    padding: 10px !important;
+    height: 225px !important;
   }
   .travelbox{
     margin-left: -3% !important;
