@@ -55,7 +55,7 @@ const Home=()=>{
 
 <Stack className="a" flexDirection="row" alignItems="center">
     <Typography  marginLeft="30px" width="50%">
-    Veb saytıma xoş gəldiniz! Bu ərazidə mənə dair ən son yenilikləri, bacarıqlarımı, nailiyyətlərimi və uğurlu proyektlərimi tapa bilərsiniz. Təcrübəmi öyrənmək və daha çox məlumat əldə etmək üçün sizi mənimlə əlaqə saxlamaya çağırıram.
+    Veb saytıma xoş gəldiniz! Burada mənə dair ən son yenilikləri, bacarıqlarımı, nailiyyətlərimi və uğurlu proyektlərimi tapa bilərsiniz. Təcrübəmi öyrənmək və daha çox məlumat əldə etmək üçün sizi mənimlə əlaqə saxlamaya çağırıram.
     </Typography>
 <div className="le" data-aos="flip-down">
 
