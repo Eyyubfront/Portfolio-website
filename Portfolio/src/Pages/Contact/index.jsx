@@ -40,7 +40,7 @@ const Contact=()=>{
                 <Box padding="7px" width="40px" border="1px solid">
                     <EmailIcon/>
                 </Box>
-                <Typography fontFamily="Times " variant="h6">
+                <Typography className="gmailtext" fontFamily="Times " variant="h6">
                     eyyubbayramov811@gmail.com
                 </Typography>
             </Stack>

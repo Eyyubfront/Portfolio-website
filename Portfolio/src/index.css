@@ -7,6 +7,9 @@
 body {
   font-family: "Roboto", sans-serif !important;
 }
+.le{
+  padding: 10px;
+}
 
 .MuiPaper-root{
   background-color: transparent !important;
@@ -130,6 +133,25 @@ body {
   .hobibox{
     margin-left: 10px !important;
   }
+  .frontgit{
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .frontback{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .gmailtext{
+    font-size: 17px !important;
+  }
+  .fronticonsdx{
+    display: flex;
+  justify-content: center !important;
+    align-items: center !important;
+  }
+  .poht{
+    width: 100% !important;
+  }
   .coperbox{
     margin-left: -3% !important;
     width: 100% !important;
@@ -171,7 +193,7 @@ body {
    gap: 40px !important;
   }
   .personjunior{
-    width: 100%;
+    width: 60px !important;
   }
 
 

@@ -8,11 +8,16 @@ import {
     Grid,
     AppBar,
   } from "@mui/material";
-  import front from "../../assets/front.jpg"
+  import front from "../../assets/ui.png"
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import { useEffect } from "react"
   import bodypohoto from "../../assets/bodyback.jpg"
+  import GitHubIcon from '@mui/icons-material/GitHub';
+  import html from "../../assets/html.png"
+  import css from "../../assets/csstwo.png"
+  import js from "../../assets/js.png"
+  import react from "../../assets/react.png"
 const Home=()=>{
     useEffect(() => {
         AOS.init();
@@ -20,25 +25,40 @@ const Home=()=>{
     return(
         <>
         <PageContainer>
-            <Typography className="fronthome" sx={{fontFamily:" TradeGothic LT Extended"}} marginTop="30px" marginLeft="30px" variant="h3">
+           
+           <Stack>
+
+<Typography color="black" className="fronthome" sx={{fontFamily:" TradeGothic LT Extended"}} marginTop="30px" marginLeft="30px" variant="h3">
+               Salam , Mən Bayramov Eyyub
+            </Typography>
+<div data-aos="zoom-out-left">
+            <Stack className="frontgit" flexDirection="row" alignItems="center" gap="10px">
+
+<Typography color="black" className="fronthome" sx={{fontFamily:" TradeGothic LT Extended"}} marginTop="20px" marginLeft="30px" variant="h5">
                 Front- End Developer
             </Typography>
-<Stack  className="vebphotoshome" margin="10px" alignItems="center" flexDirection="row" gap="30px">
-<Box >
-<div data-aos="zoom-out-left">
-    <Typography fontFamily=" serif" variant="h5"  width="100%">
-    Veb saytıma xoş gəldiniz. Buradan mənim haqqımda daha çox məlumat əldə edə və mənim CV-im, bacarıqlarım və həyata keçirdiyim layihələr barədə ətraflı məlumat tapa bilərsiniz. Bu sahədəki həvəsimi və marağımı daha yaxşı anlamaq üçün bu saytı ziyarət edərkən mənə dair daha çox şey öyrənə bilərsiniz. Əgər mənimlə əlaqə saxlamaq və ya əlavə suallarınız varsa, zəhmət olmasa, əlaqə bölməsindən mənimlə əlaqə saxlaya bilərsiniz.
-    </Typography>
-</div>
+
+            <a  href="https://github.com/Eyyubfront?tab=repositories">
+
+<Box marginTop='20px' >
+<GitHubIcon sx={{color:"black"}}/>
 </Box>
-<div data-aos="flip-down">
+</a>
+            </Stack>
+
+</div>
+           </Stack>
 
 
-<Box padding='10px' boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" marginTop="10px">
-    <img className="personjunior"  src={front} alt="" />
+
+<div className="le" data-aos="flip-down">
+
+
+<Box  width="50%" boxShadow=" 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);" className="frontback" marginLeft="30%" padding='10px'  marginTop="6px">
+    <img className="poht" style={{width:"100%"}}  src={front} alt="" />
 </Box>
 </div> 
-</Stack>
+
    
         </PageContainer>
         

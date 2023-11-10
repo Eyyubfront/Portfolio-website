@@ -2,11 +2,11 @@ import Footer from "../Footer"
 import Header from "../Header"
 import {
     Box  } from "@mui/material";
-    import bodytwo from "../../assets/bodytwo.jpg"
+    import mg from "../../assets/bag.png"
 const PageContainer=({children})=>{
     return(
         <>
-        <Box sx={{backgroundImage:`url(${bodytwo})`,width:"100%"}} >
+        <Box sx={{backgroundImage:`url(${mg})`,backgroundSize:"cover",width:"100%"}} >
 
         <Header/>
         {children}
