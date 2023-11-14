@@ -55,7 +55,7 @@ body {
     max-width: 100%;
   }
   .myabout{
-    width: 98% !important;
+    width: 93% !important;
     font-size: 17px !important;
   }
   .experinceboxed{
@@ -175,7 +175,7 @@ body {
   margin-left: 0% !important;
 }
   .megabox{
-    height: 325px !important;
+    height: 303px !important;
   }
   .projectstext{
     text-align: center !important;
@@ -221,16 +221,14 @@ body {
    
     width: 100% !important;
     padding: 10px !important;
-    height: 225px !important;
+    height: 297px !important;
   }
   .travelbox{
     
     width: 100% !important;
   height: 320px !important;
   }
-  .coperbox{
-    height: 305px !important;
-  }
+
   .hobbi{
     display: flex;
     flex-direction: column !important;
