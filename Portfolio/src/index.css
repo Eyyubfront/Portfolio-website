@@ -11,6 +11,7 @@ body {
   padding: 10px;
 }
 
+
 .MuiPaper-root{
   background-color: transparent !important;
 }
@@ -43,9 +44,7 @@ body {
   .Container {
     max-width: 540px;
   }
-   .gmailtext{
-    font-size: 17px !important;
-  }
+  
 }
 
 @media (max-width: 576px) {
@@ -53,7 +52,30 @@ body {
     max-width: 100%;
   }
   .myabout{
-    width: 100% !important;
+    width: 90% !important;
+    font-size: 15px !important;
+  }
+  .experinceboxed{
+    margin-left: 0px !important;
+  }
+  .experincetext{
+    text-align: center !important;
+  }
+  .websithome{
+    margin-left: 0px !important;
+  }
+  .websitetext{
+   text-align: center !important;
+    padding: 16px !important;
+  }
+  .skilsboxed{
+    margin-left: 0px !important;
+  }
+  .skilstext{
+    text-align: center !important;
+  }
+  .abouttext{
+    text-align: center !important;
   }
   .projectlineone{
     display: flex;
@@ -104,6 +126,7 @@ body {
     width: 70% !important;
     text-align: center !important;
   }
+
   .travelbox,
    .megabox{
     width: 100% !important;
@@ -116,11 +139,25 @@ body {
     width: 100% !important;
     padding: 10px !important;
   }
+ 
   .jedpractice{
     text-align: center !important;
+    padding: 15px;
+  }
+  .contactboxed{
+    margin-left: 0px !important;
+  }
+  .contacttext{
+    text-align: center !important;
+  }
+  .contactboxs{
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin-left: 0px !important;
   }
   .practicetext{
-    width: 90% !important;
+    width: 99% !important;
+    padding: 16px;
     text-align: center !important;
   }
 .contact{
@@ -135,7 +172,18 @@ body {
   margin-left: 0% !important;
 }
   .megabox{
-    height: 262px !important;
+    height: 285px !important;
+  }
+  .projectstext{
+    text-align: center !important;
+  }
+  .projectsbox{
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-left: 0px !important;
+  }
+  .projectsboxed{
+    margin-left: 0px !important;
   }
   .hobibox{
     margin-left: 10px !important;
@@ -150,7 +198,7 @@ body {
     margin-top: 28px !important;
   }
   .gmailtext{
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .a{
     flex-direction: column !important;
@@ -173,9 +221,9 @@ body {
     height: 225px !important;
   }
   .travelbox{
-    margin-left: -3% !important;
+    
     width: 100% !important;
-    padding: 10px !important;
+  height: 278px !important;
   }
   .hobbi{
     display: flex;

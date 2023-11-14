@@ -1,11 +1,12 @@
-import Routing from "./Routing"
+import Home from "./Pages/Home"
+
 
 
 function App() {
   
   return (
     <>
-  <Routing/>
+<Home/>
     </>
   )
 }

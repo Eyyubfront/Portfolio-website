@@ -11,7 +11,7 @@ import {
   import { Close } from "@mui/icons-material";
   import MenuIcon from "@mui/icons-material/Menu";
   import { useState } from "react";
-  import NavLink from "../Navlink";
+
   import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
   import PersonIcon from '@mui/icons-material/Person';
   import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -20,18 +20,20 @@ const BurgerMenu = () => {
     const [open, setOpen] = useState(false);
     return (
       <>
-        <Box sx={{ display: { xs: "block", md: "none" } }}>
+        <Box sx={{ display: { xs: "block", md: "none",color:"white" } }}>
           <IconButton
+          sx={{color:"white"}}
             onClick={() => {
               setOpen(!open);
             }}
           >
             {open ? <Close /> : <MenuIcon />}
           </IconButton>
-          <Dialog  fullScreen open={open} onClose={() => setOpen(false)}>
-            <Box sx={{background:"linear-gradient(278deg, rgb(11, 63, 55) -7.03%, rgb(203, 141, 98) 136.33%);", marginLeft:'123px', color:"black"}} p={4} height="calc(111% - 50px)">
+          <Dialog className="dialog" color="white"  fullScreen open={open} onClose={() => setOpen(false)}>
+            <Box sx={{background:"#0F1624",color:"white", marginLeft:'123px', color:"white"}} p={4} height="calc(81% - 50px)">
               <Stack flexDirection="row" justifyContent="flex-end">
                 <IconButton
+                sx={{color:"white"}}
                   edge="end"
                   color="black"
                   onClick={() => setOpen(false)}
@@ -40,40 +42,51 @@ const BurgerMenu = () => {
                 </IconButton>
               </Stack>
      
-              <Stack
-              color="black"
-          textAlign="center"
-          marginTop="40px"
-                gap="20px"
-                flexDirection="column"
-                justifyContent="center"
-              >
-                <NavLink to="/" title="Bayramov Eyyub" />
-                <Box border="1px solid gray">
+         <Stack gap="30px" textAlign="center">
+         <a  style={{color:"white"}} href="#about">
 
-                </Box>
-                <NavLink to="/about" title="Haqqımda" />
-                <Box border="1px solid gray">
-
+<div>
+    <h3>About</h3>
+</div>
+</a>
+<Box border="1px solid white">
+  
 </Box>
-<NavLink to="/cv" title="Cv" />
-                <Box border="1px solid gray">
-                </Box>
-                <NavLink to="/projects" title="Proyektlər" />
-                <Box border="1px solid gray">
+<a style={{color:"white"}} href="#projects">
 
+<div>
+<h3>Projects</h3>
+</div>
+</a>
+<Box border="1px solid white">
+  
 </Box>
-                <NavLink to="/skils" title="Bacarıqlar" />
-                <Box border="1px solid gray">
+< a style={{color:"white"}} href="#skils">
 
+<div>
+<h3>Skills</h3>
+</div>
+</a>
+<Box border="1px solid white">
+  
 </Box>
-                <NavLink to="/experience" title="Təcrübə" />
-                <Box border="1px solid gray">
+<a style={{color:"white"}} href="#experince">
 
+<div>
+<h3>Experince</h3>
+</div>
+</a>
+<Box border="1px solid white">
+  
 </Box>
-                <NavLink to="/contact"title="Əlaqə" />
-              </Stack>
+<a style={{color:"white"}} href="#contact">
 
+<div>
+<h3>Contact</h3>
+</div>
+</a>
+
+         </Stack>
 
             </Box>
           </Dialog>
