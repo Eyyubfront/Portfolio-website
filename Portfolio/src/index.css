@@ -18,6 +18,9 @@ body {
 .travelbox:hover{
   transform: scale(0.9);
 }
+.coperbox:hover{
+  transform: scale(0.9);
+}
 .archbox:hover{
   transform: scale(0.9);
 }
@@ -52,7 +55,7 @@ body {
     max-width: 100%;
   }
   .myabout{
-    width: 90% !important;
+    width: 95% !important;
     font-size: 15px !important;
   }
   .experinceboxed{
@@ -172,7 +175,7 @@ body {
   margin-left: 0% !important;
 }
   .megabox{
-    height: 285px !important;
+    height: 315px !important;
   }
   .projectstext{
     text-align: center !important;
@@ -223,7 +226,10 @@ body {
   .travelbox{
     
     width: 100% !important;
-  height: 278px !important;
+  height: 299px !important;
+  }
+  .coperbox{
+    height: 305px !important;
   }
   .hobbi{
     display: flex;

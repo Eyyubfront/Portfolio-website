@@ -49,7 +49,7 @@ Mega-Texnika
 <Stack className="projectsbox" marginLeft="30px" padding="10px"  marginTop="40px" flexDirection="row" gap="40px">
 <a href="https://global-travel-project.vercel.app/">
 
-<Box  height="256px" borderRadius="30px 0px"  className="travelbox" width="305px" marginTop="10px"  boxShadow="0px 0px 12px 0px #FFF;" >
+<Box  height="256px" borderRadius="30px 0px"  className="coperbox" width="305px" marginTop="10px"  boxShadow="0px 0px 12px 0px #FFF;" >
 <div data-aos="zoom-in">
 <img  style={{width:"100%",padding:"13px",marginTop:"10px"}} src={coper} alt="" />
 <Typography marginTop="20px" color="white" textAlign="center" variant="h5" fontFamily="Monospace">
