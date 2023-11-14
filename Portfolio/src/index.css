@@ -55,8 +55,8 @@ body {
     max-width: 100%;
   }
   .myabout{
-    width: 95% !important;
-    font-size: 15px !important;
+    width: 98% !important;
+    font-size: 17px !important;
   }
   .experinceboxed{
     margin-left: 0px !important;
@@ -175,7 +175,7 @@ body {
   margin-left: 0% !important;
 }
   .megabox{
-    height: 315px !important;
+    height: 318px !important;
   }
   .projectstext{
     text-align: center !important;
@@ -218,7 +218,7 @@ body {
     width: 100% !important;
   }
   .coperbox{
-    margin-left: -3% !important;
+   
     width: 100% !important;
     padding: 10px !important;
     height: 225px !important;
@@ -226,7 +226,7 @@ body {
   .travelbox{
     
     width: 100% !important;
-  height: 299px !important;
+  height: 310px !important;
   }
   .coperbox{
     height: 305px !important;
