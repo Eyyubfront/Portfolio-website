@@ -49,10 +49,10 @@ const BurgerMenu = () => {
     <h3>About</h3>
 </div>
 </a>
-<Box border="1px solid white">
+<Box  border="1px solid white">
   
 </Box>
-<a style={{color:"white"}} href="#projects">
+<a  style={{color:"white"}} href="#projects">
 
 <div>
 <h3>Projects</h3>
@@ -65,6 +65,15 @@ const BurgerMenu = () => {
 
 <div>
 <h3>Skills</h3>
+</div>
+</a>
+<Box border="1px solid white">
+  
+</Box>
+< a style={{color:"white"}} href="#Cv">
+
+<div>
+<h3>Cv</h3>
 </div>
 </a>
 <Box border="1px solid white">

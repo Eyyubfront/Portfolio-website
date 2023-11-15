@@ -6,7 +6,7 @@ const Contact =()=>{
     return(
         <>
         <div id="contact">
-<Stack className="contactboxed" gap="27px" marginTop="13%" marginLeft="30px">
+<Stack className="contactboxed" gap="27px" marginTop="7%" marginLeft="30px">
 <Typography className="contacttext" color="white" fontFamily="Inter" variant="h5">
     Contact
           </Typography>

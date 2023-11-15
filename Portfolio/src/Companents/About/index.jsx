@@ -5,7 +5,7 @@ const About=()=>{
         
 <div  id="about">
 
-<Stack  gap="10px"  marginTop="14%" marginLeft="30px">
+<Stack  gap="10px"  marginTop="10%" marginLeft="30px">
 
          <Typography className="abouttext" color="white" fontFamily="Inter" variant="h5">
      About

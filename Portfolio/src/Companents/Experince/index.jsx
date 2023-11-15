@@ -4,11 +4,11 @@ const Experince=()=>{
         <>
         
 <div id="experince">
-<Stack className="experinceboxed" gap="14px" marginTop="13%" marginLeft="30px">
+<Stack className="experinceboxed" gap="14px" marginTop="6%" marginLeft="30px">
 <Typography className="experincetext" color="white" fontFamily="Inter" variant="h5">
-    Experince
+    Experience
           </Typography>
-          <Typography color="white" className="jedpractice"  variant="h6"  fontFamily="Monospace">
+          <Typography color="white" fontSize="16px" className="jedpractice"  variant="h6"  fontFamily="Monospace">
           Jed Academy - Junior Front-End Developer internship program:
                 07.17.2023-10.25.2023
             </Typography>

@@ -11,6 +11,10 @@ body {
   padding: 10px;
 }
 
+.websitetext{
+  width: 84%;
+}
+
 
 .MuiPaper-root{
   background-color: transparent !important;
@@ -70,6 +74,7 @@ body {
   .websitetext{
    text-align: center !important;
     padding: 16px !important;
+    width: 100%  !important;
   }
   .skilsboxed{
     margin-left: 0px !important;
@@ -120,6 +125,11 @@ body {
     padding: 8px !important ;
    
     margin-top: 52px !important;
+  }
+
+  .websitestartphoto{
+    flex-direction: column !important;
+    align-items: center !important;
   }
  
   .fronthome{
@@ -224,11 +234,25 @@ body {
     height: 297px !important;
   }
   .travelbox{
-    
-    width: 100% !important;
   height: 320px !important;
   }
+  .cvbox{
+    width: 96% !important;
+    margin: auto !important;
+  }
+  .frontwebsitepht{
+    width: 100% !important;
+  }
+  .allskils{
+    gap: 5px !important;
+  }
 
+.skilscolmn{
+  display: flex;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
   .hobbi{
     display: flex;
     flex-direction: column !important;

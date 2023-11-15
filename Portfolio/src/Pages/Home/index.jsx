@@ -4,13 +4,14 @@ import {  Box,  Button,Container,Stack,Typography, Grid, AppBar} from "@mui/mate
   import 'aos/dist/aos.css';
   import { useEffect } from "react"
   import * as React from 'react';
-import Contact from "../../Companents/Burgermenu/Contact";
+  import Contact from "../../Companents/Contact";
 import Experince from "../../Companents/Experince";
 import Skils from "../../Companents/Skils";
 import Project from "../../Companents/Project";
 import About from "../../Companents/About";
 import Navbar from "../../Companents/Navbar";
 import Websitestart from "../../Companents/Websitestart";
+import Cv from "../../Companents/Cv";
 const Home=()=>{
     useEffect(() => {
         AOS.init();
@@ -23,6 +24,7 @@ const Home=()=>{
 <About/>
 <Project/>
 <Skils/>
+<Cv/>
 <Experince/>
 <Contact/>
 </Box>   
