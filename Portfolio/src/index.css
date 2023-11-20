@@ -186,10 +186,11 @@ body {
   margin-left: 0% !important;
 }
   .megabox{
-    height: 276px !important;
+    height: 286px !important;
   }
   .megatexnikabox{
     height: 319px !important;
+    width: 100% !important;
   }
   .projectstext{
     text-align: center !important;
