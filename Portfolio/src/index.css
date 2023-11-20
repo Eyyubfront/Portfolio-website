@@ -188,6 +188,9 @@ body {
   .megabox{
     height: 276px !important;
   }
+  .megatexnikabox{
+    height: 319px !important;
+  }
   .projectstext{
     text-align: center !important;
   }
@@ -232,7 +235,7 @@ body {
    
     width: 100% !important;
     padding: 10px !important;
-    height: 297px !important;
+    height: 286px !important;
   }
   .travelbox{
   height: 320px !important;

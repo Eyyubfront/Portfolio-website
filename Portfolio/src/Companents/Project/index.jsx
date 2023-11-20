@@ -32,7 +32,7 @@ const Project = () => {
 
                         <a href="https://mega-texnika.netlify.app/">
 
-                            <Box marginTop="8px" height="269px" borderRadius="8px 0px" className="megabox" width="300px" boxShadow=" 0px 0px 12px 0px #FFF" >
+                            <Box marginTop="8px" height="269px" borderRadius="8px 0px" className="megatexnikabox" width="300px" boxShadow=" 0px 0px 12px 0px #FFF" >
                                 <div data-aos="zoom-in">
                                     <img style={{ width: "100%", padding: "10px", marginTop: "12px" }} src={texnikamega} alt="" />
                                     <Typography marginTop="18px" color="white" textAlign="center" variant="h5" fontFamily="Monospace">
