@@ -3,7 +3,7 @@ const Experince=()=>{
     return(
         <>
         
-<div id="experince">
+<div id="experience">
 <Stack className="experinceboxed" gap="14px" marginTop="6%" marginLeft="30px">
 <Typography className="experincetext" color="white" fontFamily="Inter" variant="h5">
     Experience
