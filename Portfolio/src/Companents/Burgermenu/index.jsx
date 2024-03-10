@@ -20,9 +20,6 @@ import { useLocation } from 'react-router-dom'
 
 const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
-
-
-
   return (
     <>
       <Box sx={{ display: { xs: "block", md: "none", color: "white" } }}>
@@ -40,7 +37,7 @@ const BurgerMenu = () => {
               <IconButton
                 sx={{ color: "white" }}
                 edge="end"
-                color="black"
+                
                 onClick={() => setOpen(false)}
               >
                 <Close />
