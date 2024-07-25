@@ -10,8 +10,7 @@ import Skils from "../../Companents/Skils";
 import Project from "../../Companents/Project";
 import About from "../../Companents/About";
 import Navbar from "../../Companents/Navbar";
-import Websitestart from "../../Companents/Websitestart";
-import Cv from "../../Companents/Cv";
+import Footer from "../../Companents/Footer";
 const Home = () => {
   useEffect(() => {
     AOS.init();
@@ -19,19 +18,16 @@ const Home = () => {
   return (
     <>
 
-      <Box sx={{ background: "#0F1624", height: "100%vh" }}>
-
-
+<div className="allspage">
         <Navbar />
-
-        <Websitestart />
         <About />
-        <Project />
         <Skils />
-        <Cv />
         <Experince />
+        <Project />
         <Contact />
-      </Box>
+      <Footer/>
+</div>
+
     </>
   )
 }

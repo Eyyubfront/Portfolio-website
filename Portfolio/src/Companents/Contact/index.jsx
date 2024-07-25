@@ -1,56 +1,127 @@
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { Container } from '@mui/material';
+import photo from "../../assets/Skilss/paper-plane-solid.svg"
+import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-import { Box, Button, Container, Stack, Typography, Grid, AppBar } from "@mui/material";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        name: '',
+        subject: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+            .then((result) => {
+                console.log(result.text);
+                alert('Message sent successfully!');
+            }, (error) => {
+                console.log(error.text);
+                alert('Failed to send the message.');
+            });
+    };
+
     return (
         <>
             <div id="contact">
-                <Stack className="contactboxed" gap="27px" marginTop="7%" marginLeft="30px">
-                    <Typography className="contacttext" color="white" fontFamily="Inter" variant="h5">
-                        Contact
-                    </Typography>
-                    <Stack className="contactboxs" padding="15px" flexDirection="row" marginLeft="20px" color="white" gap="15%">
-                        <Stack className="contac" flexDirection="row" alignItems="center" gap="10px">
-                            <a href="https://wa.me/0706504565">
-                                <Stack flexDirection="row" alignItems="center" gap="10px">
-                                    <Box color="white" padding="7px" width="40px" border="1px solid" >
-                                        <LocalPhoneIcon sx={{ color: "white" }} />
-                                    </Box>
-                                    <Typography fontFamily="Monospace " color="white" variant="h5">
-                                        070-650-45-65
-                                    </Typography>
-                                </Stack>
-                            </a>
-                        </Stack>
-                        <Stack className="contac" flexDirection="row" alignItems="center" gap="10px">
-                            <a href="https://github.com/Eyyubfront?tab=repositories">
-                                <Stack flexDirection="row" alignItems="center" gap="10px">
-                                    <Box color="white" padding="7px" width="40px" border="1px solid" >
-                                        <GitHubIcon sx={{ color: "white" }} />
-                                    </Box>
-                                    <Typography fontFamily="Monospace " color="white" variant="h5">
-                                        Eyyubfront
-                                    </Typography>
-                                </Stack>
-                            </a>
-                        </Stack>
-                        <Stack className="contac" flexDirection="row" alignItems="center" gap="10px">
-                            <a href="mailto:eyyubbayramov811@gmail.com">
-                                <Stack flexDirection="row" alignItems="center" gap="10px">
-                                    <Box color="white" padding="7px" width="40px" border="1px solid" >
-                                        <EmailIcon sx={{ color: "white" }} />
-                                    </Box>
-                                    <Typography className="gmailtext" fontFamily="Monospace " color="white" variant="h5">
-                                        eyyubbayramov811@gmail.com
-                                    </Typography>
-                                </Stack>
-                            </a>
-                        </Stack>
-                    </Stack>
-                </Stack>
+                <Container>
+              
+                    <div className="contact__container">
+                        <div className="contact__top">
+                            <h2>Contact Me</h2>
+                        </div>
+                        <div className="contact__card">
+                            <div className="contact__left">
+
+                                <div className="contact__name">
+                                    <h2 className="emailnames">Email</h2>
+                                    <div>
+                                        <FlightTakeoffIcon className='airplane' />
+                                    </div>
+                                </div>
+                                <form className="contact__input" onSubmit={handleSubmit}>
+                                    <input
+                                        className="contactinputs"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Your Email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <input
+                                        className="contactinputs"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Your Name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <input
+                                        className="contactinputs"
+                                        type="text"
+                                        name="subject"
+                                        placeholder="Subject"
+                                        value={formData.subject}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <input
+                                        className="contactinputsmsg"
+                                        type="text"
+                                        name="message"
+                                        placeholder="Message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <button type="submit" className="contact__send">
+                                        Send
+                                    </button>
+                                </form>
+                            </div>
+                            <div className="contact__right">
+                                <h2>Let's get in touch</h2>
+                                
+                                <p>Want to get in touch? I'd love to hear from you. Feel free to use the contact form</p>
+                                <div className="icon__contacts">
+                                    <div className="icons__card">
+                                        <p><LocationOnIcon/></p>
+                                        <p>Baku, Azerbaijan</p>
+                                    </div>
+                                    <div className="icons__card">
+                                        <p><MailOutlineIcon/></p>
+                                        <p>eyyubbayramov811@gmail.com</p>
+                                    </div>
+                                    <div className="icons__card">
+                                        <p><LinkedInIcon/></p>
+                                        <p>
+                                            Eyyub Bayramov</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </Container>
             </div>
         </>
-    )
+    );
 }
-export default Contact
+
+export default Contact;

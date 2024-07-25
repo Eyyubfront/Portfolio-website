@@ -1,108 +1,79 @@
-
-import {
-  Box,
-  Dialog,
-  IconButton,
-  Menu,
-  MenuItem,
-  Modal,
-  Stack,
-  Typography,
-} from "@mui/material";
 import { Close } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { IconButton, Stack, Hidden } from "@mui/material";
 import { useState } from "react";
 
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import PersonIcon from '@mui/icons-material/Person';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { useLocation } from 'react-router-dom'
 
 const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <Box sx={{ display: { xs: "block", md: "none", color: "white" } }}>
-        <IconButton
-          sx={{ color: "white" }}
-          onClick={() => {
-            setOpen(!open);
-          }}
-        >
-          {open ? <Close /> : <MenuIcon />}
-        </IconButton>
-        <div style={{ position: 'fixed', right: 0, top: 0, width: '100%', display: open ? 'block' : 'none', zIndex: 1000 }} className="dialog" color="white" fullScreen open={open} >
-          <Box sx={{ background: "#0F1624", color: "white", marginLeft: '123px', color: "white" }} p={4} height="calc(96% - 50px)">
-            <Stack flexDirection="row" justifyContent="flex-end">
-              <IconButton
-                sx={{ color: "white" }}
-                edge="end"
-                
-                onClick={() => setOpen(false)}
-              >
-                <Close />
-              </IconButton>
-            </Stack>
 
-            <Stack gap="30px" textAlign="center">
-              <a style={{ color: "white" }} href="#about">
-
-                <div >
-                  <h3>About</h3>
+      <Hidden mdUp> 
+  
+        <div className="burger-container">
+          <IconButton
+            className="menu-icon"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <Close  /> : <MenuIcon />}
+          </IconButton>
+          {open && (
+            <div className={`menu-drawer ${open ? 'open' : ''}`}>
+              <div data-aos="fade-down"  data-aos-easing="linear"
+     data-aos-duration="300">
+              <Stack flexDirection="row" justifyContent="flex-end">
+                <IconButton
+                  className="close-icon"
+                  edge="end"
+                  onClick={() => setOpen(false)}
+                >
+                  <Close className="cloceicon" />
+                </IconButton>
+              </Stack>
+              <div className="navbar__container">
+                <div className="navbar__top">
+                  <div className="navbar__hrefs">
+                    <a href="#about">
+                      <div className="navbarhref">
+                        <h3 className="burgermenunames">About</h3>
+                      </div>
+                    </a>
+                    <a href="#skils">
+                      <div className="navbarhref">
+                        <h3 className="burgermenunames">Skills</h3>
+                      </div>
+                    </a>
+                    <a href="#experience">
+                      <div className="navbarhref">
+                        <h3 className="burgermenunames">Experience</h3>
+                      </div>
+                    </a>
+                    <a href="#projects">
+                      <div className="navbarhref">
+                        <h3 className="burgermenunames">Projects</h3>
+                      </div>
+                    </a>
+                    <a href="#contact">
+                      <div className="navbarhref">
+                        <h3 className="burgermenunames">Contact</h3>
+                      </div>
+                    </a>
+                    <a href="https://github.com/Eyyubfront">
+                      <div className="navbar__githubeyyub">
+                        Github Profile
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </a>
-              <Box border="1px solid white">
-
-              </Box>
-              <a style={{ color: "white" }} href="#projects">
-
-                <div >
-                  <h3>Projects</h3>
-                </div>
-              </a>
-              <Box border="1px solid white">
-
-              </Box>
-              < a style={{ color: "white" }} href="#skils">
-
-                <div >
-                  <h3>Skills</h3>
-                </div>
-              </a>
-              <Box border="1px solid white">
-
-              </Box>
-              < a style={{ color: "white" }} href="#Cv">
-
-                <div  >
-                  <h3>Cv</h3>
-                </div>
-              </a>
-
-              <Box border="1px solid white">
-
-              </Box>
-              <a style={{ color: "white" }} href="#experience">
-
-                <div >
-                  <h3>Experience</h3>
-                </div>
-              </a>
-              <Box border="1px solid white">
-
-              </Box>
-              <a style={{ color: "white" }} href="#contact">
-
-                <div >
-                  <h3>Contact</h3>
-                </div>
-              </a>
-
-            </Stack>
-
-          </Box>
-        </div>
-      </Box>
+              </div>
+            </div>
+          </div>
+          )}
+          </div>
+ 
+      </Hidden>
+    
     </>
   );
 };

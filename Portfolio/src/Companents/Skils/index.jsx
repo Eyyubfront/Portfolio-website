@@ -1,165 +1,60 @@
-import {
-    Box,
-    Button,
-    Container,
-    Stack,
-    Typography,
-    Grid,
-    AppBar,
+import { Container } from "@mui/material";
+import react from "../../assets/Skilss/react.png";
+import html from "../../assets/Skilss/html.png";
+import css from "../../assets/Skilss/css.png";
+import js from "../../assets/Skilss/js.png";
+import github from "../../assets/Skilss/github.svg";
+import sass from "../../assets/Skilss/sass.png";
+import figma from "../../assets/Skilss/figma.png";
+import materialui from "../../assets/Skilss/materialui.svg";
+import redux from "../../assets/Skilss/redux.svg";
+import responsive from "../../assets/Skilss/responsive.svg";
+import restapi from "../../assets/Skilss/restapi.svg";
+import styledcomponents from "../../assets/Skilss/styledcomponents.png";
+import Bootstrap from "../../assets/Skilss/Bootstrap.png";
+import branc from "../../assets/Skilss/branc.png";
 
-} from "@mui/material";
+const skillsData = [
+  { src: html, name: "HTML" },
+  { src: css, name: "CSS" },
+  { src: github, name: "Github" },
+  { src: js, name: "Javascript" },
+  { src: react, name: "React Js" },
+  { src: sass, name: "SASS/SCSS" },
+  { src: responsive, name: "Responsive web design" },
+  { src: branc, name: "Branches" },
+  { src: figma, name: "Figma" },
+  { src: materialui, name: "Material UI" },
+  { src: styledcomponents, name: "Styled Components" },
+  { src: redux, name: "Redux/Redux Toolkit" },
+  { src: Bootstrap, name: "Bootstrap" },
+  { src: restapi, name: "Rest API", imgClass: "skilscardsphotoapi" },
+];
 
 const Skils = () => {
-    return (
-        <>
-            <div id="skils">
-                <Stack className="skilsboxed" gap="20px" marginTop="10%" marginLeft="20px">
-                    <Typography className="skilstext" color="white" fontFamily="Inter" variant="h5">
-                        Skills
-                    </Typography>
-                    <div data-aos="zoom-in-right">
-                        <Stack className="allskils" flexDirection="column" gap="20px">
+  return (
+    <div id="skils">
+      <Container>
+        <div className="skills__container">
+          <div className="skils__top">
+            <h2>Skills</h2>
+          </div>
+          <div className="skills__buttom">
+            {skillsData.map((skill, index) => (
+              <div key={index} className="card__skils">
+                <img
+                  className={skill.imgClass ? skill.imgClass : "skilscardsphoto"}
+                  src={skill.src}
+                  alt={skill.name}
+                />
+                <p>{skill.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </div>
+  );
+};
 
-                            <Stack className="skilscolmn" gap="10px" flexDirection="row" padding="15px">
-                                <Box className="skilsbox" width="50%" border="1px solid DimGray">
-                                    <Stack sx={{ background: "DimGray" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "Gray", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Gray">
-                                            HTML5
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-
-                                <Box className="skilsbox" width="50%" border="1px solid DimGray">
-                                    <Stack sx={{ background: "DimGray" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "Gray", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Gray">
-                                            SCSS
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                            </Stack>
-
-                            <Stack className="skilscolmn" gap="10px" flexDirection="row" padding="15px">
-
-                                <Box className="skilsbox" width="50%" border="1px solid Blue">
-                                    <Stack sx={{ background: "Blue" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "RoyalBlue", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid RoyalBlue">
-                                            CSS3
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ backgroundColor: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Javascript
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                            </Stack>
-
-
-                            <Stack className="skilscolmn" gap="10px" flexDirection="row" padding="15px">
-
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            React
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Responsive 
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                            </Stack>
-
-                            <Stack className="skilscolmn" gap="10px" flexDirection="row" padding="15px">
-
-
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Redux
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Bootstrap
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                            </Stack>
-
-                            <Stack className="skilscolmn" gap="10px" flexDirection="row" padding="15px">
-
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Github
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Mui
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                            </Stack>
-
-
-
-
-                            <Stack className="skilscolmn" gap="10px" flexDirection="row" padding="15px">
-
-
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Vite
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                                <Box className="skilsbox" width="50%" border="1px solid RebeccaPurple">
-                                    <Stack sx={{ background: "RebeccaPurple" }} alignItems="center" flexDirection="row" justifyContent="space-between">
-
-                                        <Box sx={{ background: "Indigo", color: "white", fontFamily: "Monospace" }} width="100px" padding="5px" border="1px solid Indigo">
-                                            Axios
-                                        </Box>
-
-                                    </Stack>
-                                </Box>
-                            </Stack>
-
-
-
-
-                        </Stack>
-                    </div>
-
-                </Stack>
-            </div>
-
-        </>
-    )
-}
-export default Skils
+export default Skils;

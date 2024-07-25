@@ -1,20 +1,40 @@
-import { Box, Button, Container, Stack, Typography, Grid, AppBar } from "@mui/material";
+import React from 'react';
+import {Container} from "@mui/material";
+import aboutphoto from "../../assets/frontend.jpg"
 const About = () => {
     return (
         <>
+<div id="about">
+    <Container>
+<div className="about__container">
+    <div className="about__left">
+<div className="about__namestops">
+<h2>Hi, I am
+Eyyub Bayramov</h2>
+</div>
+<div className="about__namesbutom">
+ I am <span className='aboutspancolor'>Frontend Developer</span>
+</div>
+<div className="about__infor">
+I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
+</div>
+<a href="https://drive.google.com/file/d/1aLNFfK2TbRPA8zQjU4IDj5MpPdfO5a74/view?usp=sharing">
+<div className="about__cv">
+    Check Resume
+</div>
+</a>
+    </div>
+    <div className="about__right">
+<img className='aboutsphoto' src={aboutphoto} alt="" />
+    </div>
+</div>
+    </Container>
 
-            <div id="about">
 
-                <Stack gap="10px" marginTop="10%" marginLeft="30px">
+</div>
+        
+         
 
-                    <Typography className="abouttext" color="white" fontFamily="Inter" variant="h5">
-                        About
-                    </Typography>
-                    <Typography fontSize="15px" color="white" className="myabout" fontFamily=" Monospace" width="70%">
-                        I am Eyyub Bayramov, 19 years old, currently studying at the Faculty of Information Technologies of Azerbaijan State Oil and Industry University. I started my studies in 2021 and I am going to graduate in 2025. This educational journey has equipped me with a solid foundation in IT, preparing me for a dynamic and growing industry. I am passionate about learning about innovative technologies and applying them to real-world challenges. Through coursework and personal projects, I have acquired skills in various programming languages and development tools. I am eager to use this knowledge and contribute to advanced solutions in the field of Information Technology.
-                    </Typography>
-                </Stack>
-            </div>
         </>
     )
 }

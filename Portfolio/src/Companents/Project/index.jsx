@@ -1,90 +1,91 @@
-import arch from "../../assets/arch.jpg"
-import coper from "../../assets/coper.jpg"
-import travels from "../../assets/travels.jpg"
-import texnikamega from "../../assets/texnikamega.jpeg"
-import { Box, Button, Container, Stack, Typography, Grid, AppBar } from "@mui/material";
+import arch from "../../assets/Projects/arch.jpg";
+import coper from "../../assets/Projects/coper.jpg";
+import travels from "../../assets/Projects/travell.png";
+import texnikamega from "../../assets/Projects/megatexnika.png";
+import digital from "../../assets/Projects/digital.png";
+import music from "../../assets/Projects/music.png";
+import maxresdefault from "../../assets/Projects/calcs.jpg";
+import { Container } from "@mui/material";
+
+const projects = [
+    {
+        image: arch,
+        name: "Arch Baku",
+        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
+        liveLink: "https://arch-baku-eyyub.vercel.app/",
+    },
+    {
+        image: coper,
+        name: "Coper Pro",
+        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
+        liveLink: "https://copper-projects-nv9q.vercel.app/",
+    },
+    {
+        image: digital,
+        name: "Communicat-E",
+        skills: ["HTML", "CSS", "SASS/SCSS", "JAVASCRIPT", "React.js"],
+        liveLink: "https://communicat-e.netlify.app/",
+    },
+    {
+        image: travels,
+        name: "Travel",
+        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
+        liveLink: "https://global-travel-project.vercel.app/",
+    },
+    {
+        image: texnikamega,
+        name: "Mega Texnika",
+        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
+        liveLink: "https://mega-texnika-flame.vercel.app/",
+    },
+    {
+        image: music,
+        name: "Music Galery",
+        skills: ["HTML", "CSS", "Swiper", "JAVASCRIPT"],
+        liveLink: "https://music-galery-game.vercel.app/",
+    },
+    {
+        image: maxresdefault,
+        name: "Calculator-Js",
+        skills: ["HTML", "CSS","ALGORITHM","JAVASCRIPT"],
+        liveLink: "https://calculator-simple-tan.vercel.app/",
+    },
+];
+
 const Project = () => {
     return (
-        <>
-            <div id="projects">
 
-                <Stack className="projectsboxed" gap="10px" marginTop="12%" marginLeft="30px">
-
-                    <Typography className="projectstext" color="white" fontFamily="Inter" variant="h5">
-                        Projects
-                    </Typography>
-
-                    <Stack className="projectsbox" marginLeft="5px" padding="10px" marginTop="40px" flexDirection="row" gap="20px">
-                        <a href="https://global-travel-project.vercel.app/">
-
-                            <Box height="265px" borderRadius="8px 0px" className="travelbox" width="305px" marginTop="10px" boxShadow="0px 0px 12px 0px #FFF;" >
-                                <div data-aos="zoom-in">
-                                    <img className="travelspht" style={{ width: "100%", padding: "13px", margin: "auto" }} src={travels} alt="" />
-                                    <Typography marginTop="11px" color="white" textAlign="center" variant="h5" fontFamily="Monospace">
-                                        Global-travel
-                                    </Typography>
-                                    <Box margin="0 auto" marginTop="8px" border="1px solid" width='200px'>
-
-                                    </Box>
+        <div id="projects">
+            <Container>
+                <div className="projects__container">
+                    <div className="projects__top">
+                        <h2>Projects</h2>
+                    </div>
+            <div data-aos="fade-down-left">
+                    <div className="projects__allcard">
+                        {projects.map((project, index) => (
+                            <div className="project__card" key={index}>
+                                <img className="projectimg" src={project.image} alt={project.name} />
+                                <h2 className="projectname">{project.name}</h2>
+                                <div className="project__skils">
+                                    {project.skills.map((skill, skillIndex) => (
+                                        <p className="skilscolor" key={skillIndex}>{skill}</p>
+                                    ))}
                                 </div>
-                            </Box>
-                        </a>
+                                <a className="project__live" href={project.liveLink}>
+                                    <div>
+                                        View Live
+                                    </div>
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
-                        <a href="https://mega-texnika.netlify.app/">
+        </div>
+            </Container>
+        </div>
+    );
+};
 
-                            <Box marginTop="8px" height="269px" borderRadius="8px 0px" className="megatexnikabox" width="300px" boxShadow=" 0px 0px 12px 0px #FFF" >
-                                <div data-aos="zoom-in">
-                                    <img style={{ width: "100%", padding: "10px", marginTop: "12px" }} src={texnikamega} alt="" />
-                                    <Typography marginTop="18px" color="white" textAlign="center" variant="h5" fontFamily="Monospace">
-                                        Mega-Texnika
-                                    </Typography>
-                                    <Box margin="0 auto" marginTop="12px" border="1px solid" width='200px'>
-
-                                    </Box>
-                                </div>
-                            </Box>
-                        </a>
-
-                        <a href="https://global-travel-project.vercel.app/">
-
-                            <Box height="266px" borderRadius="8px 0px" className="coperbox" width="305px" marginTop="10px" boxShadow="0px 0px 12px 0px #FFF;" >
-                                <div data-aos="zoom-in">
-                                    <img style={{ width: "100%", height: "183px", padding: "13px", marginTop: "10px" }} src={coper} alt="" />
-                                    <Typography marginTop="17px" color="white" textAlign="center" variant="h5" fontFamily="Monospace">
-                                        Copper Pro
-                                    </Typography>
-                                    <Box margin="0 auto" marginTop="10px" border="1px solid" width='200px'>
-
-                                    </Box>
-                                </div>
-                            </Box>
-                        </a>
-
-                        <a href="https://mega-texnika.netlify.app/">
-
-                            <Box marginTop="8px" height="269px" borderRadius="8px 0px" className="megabox" width="300px" boxShadow=" 0px 0px 12px 0px #FFF" >
-                                <div data-aos="zoom-in">
-                                    <img style={{ width: "100%", height: "183px", padding: "10px", marginTop: "16px" }} src={arch} alt="" />
-                                    <Typography marginTop="16px" color="white" textAlign="center" variant="h5" fontFamily="Monospace">
-                                        Arch-Baku
-                                    </Typography>
-                                    <Box margin="0 auto" marginTop="10px" border="1px solid" width='200px'>
-
-                                    </Box>
-                                </div>
-                            </Box>
-                        </a>
-                    </Stack>
-
-
-
-
-
-                </Stack>
-            </div>
-
-
-        </>
-    )
-}
-export default Project
+export default Project;
