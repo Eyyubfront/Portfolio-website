@@ -890,6 +890,9 @@ margin-top: 15px;
     text-align: center;
     font-size: 13px;
   }
+  .about__namesbutom{
+    display: none;
+  }
   .projects__allcard {
     justify-content: center !important;
   }
@@ -1043,6 +1046,9 @@ margin-top: 15px;
 }
 
 @media (max-width: 320px) {
+  .about__namesbutom{
+    display: none;
+  }
   .experience__text {
     text-align: center;
     font-size: 13px;
