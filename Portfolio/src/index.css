@@ -431,6 +431,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 align-items: center;
+justify-content: center;
 gap: 20px;
 margin-top: 20px;
 }
@@ -888,7 +889,7 @@ margin-top: 15px;
 @media (max-width: 576px) {
   .experience__text {
     text-align: center;
-    font-size: 13px;
+    font-size: 9px;
   }
   .about__namesbutom{
     display: none;
@@ -899,7 +900,7 @@ margin-top: 15px;
   .allrights {
     text-align: center;
     width: 100%;
-    font-size: 19px;
+    font-size: 18px;
   }
   .navbar__href {
     display: none !important;
@@ -1051,7 +1052,7 @@ margin-top: 15px;
   }
   .experience__text {
     text-align: center;
-    font-size: 13px;
+    font-size: 9px;
   }
   .projects__allcard {
     justify-content: center !important;

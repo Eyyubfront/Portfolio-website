@@ -65,7 +65,7 @@ const Experience = () => {
                     <div className="border__card"></div>
                   </div>
                   <div className="experience__cards">
-                    <div className="experience__jetcards" style={{ maxHeight: readMoreStates[index] ? '1000px' : '400px', transition: 'max-height 0.5s ease-in-out' }}>
+                    <div className="experience__jetcards" >
                       <div className="jetcard">
                         <div className="experience__cardtop">
                           <img

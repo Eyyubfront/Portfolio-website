@@ -8,9 +8,12 @@ const About = () => {
     <Container>
 <div className="about__container">
     <div className="about__left">
+
 <div className="about__namestops">
+    <div data-aos="zoom-out-right">
 <h2>Hi, I am
 Eyyub Bayramov</h2>
+    </div>
 </div>
 <div className="about__namesbutom">
  I am <span className='aboutspancolor'>Frontend Developer</span>
