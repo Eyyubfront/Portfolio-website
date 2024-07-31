@@ -45,14 +45,15 @@ html, body {
   height: auto;
 }
 .navbar{
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 99999;
   top: 0;
 height: 100px;
 border: 1px solid #0f1722;
 background-color: #0f1722;
-border-radius: 12px;
-margin-bottom: 70px;
+
+margin-bottom: 90px;
 }
 .navbar__top{
   padding: 20px;
@@ -69,6 +70,9 @@ margin-bottom: 70px;
   gap: 6px;
   align-items: center;
   font-size: 25px;
+}
+#about{
+  margin-top: 100px;
 }
 .about__namesbutom{
   color: aliceblue;

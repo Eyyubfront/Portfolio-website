@@ -1,4 +1,3 @@
-import arch from "../../assets/Projects/arch.jpg";
 import coper from "../../assets/Projects/coper.jpg";
 import travels from "../../assets/Projects/travell.png";
 import texnikamega from "../../assets/Projects/megatexnika.png";
@@ -10,16 +9,10 @@ import { Container } from "@mui/material";
 
 const projects = [
     {
-        image: arch,
-        name: "Arch Baku",
+        image: texnikamega,
+        name: "Mega Texnika",
         skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
-        liveLink: "https://arch-baku-eyyub.vercel.app/",
-    },
-    {
-        image: coper,
-        name: "Coper Pro",
-        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
-        liveLink: "https://copper-projects-nv9q.vercel.app/",
+        liveLink: "https://mega-texnika-flame.vercel.app/",
     },
     {
         image: digital,
@@ -28,16 +21,16 @@ const projects = [
         liveLink: "https://communicat-e.netlify.app/",
     },
     {
+        image: roadmap,
+        name: "RoadMap",
+        skills: ["HTML", "CSS","React","JAVASCRIPT"],
+        liveLink: "https://frontend-3b.vercel.app/",
+    },
+    {
         image: travels,
         name: "Travel",
         skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
         liveLink: "https://global-travel-project.vercel.app/",
-    },
-    {
-        image: texnikamega,
-        name: "Mega Texnika",
-        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
-        liveLink: "https://mega-texnika-flame.vercel.app/",
     },
     {
         image: music,
@@ -52,10 +45,10 @@ const projects = [
         liveLink: "https://calculator-simple-tan.vercel.app/",
     },
     {
-        image: roadmap,
-        name: "RoadMap",
-        skills: ["HTML", "CSS","React","JAVASCRIPT"],
-        liveLink: "https://frontend-3b.vercel.app/",
+        image: coper,
+        name: "Coper Pro",
+        skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
+        liveLink: "https://copper-projects-nv9q.vercel.app/",
     },
 ];
 
