@@ -3,6 +3,7 @@ import coper from "../../assets/Projects/coper.jpg";
 import travels from "../../assets/Projects/travell.png";
 import texnikamega from "../../assets/Projects/megatexnika.png";
 import digital from "../../assets/Projects/digital.png";
+import roadmap from "../../assets/Projects/roadmap.png";
 import music from "../../assets/Projects/music.png";
 import maxresdefault from "../../assets/Projects/calcs.jpg";
 import { Container } from "@mui/material";
@@ -49,6 +50,12 @@ const projects = [
         name: "Calculator-Js",
         skills: ["HTML", "CSS","ALGORITHM","JAVASCRIPT"],
         liveLink: "https://calculator-simple-tan.vercel.app/",
+    },
+    {
+        image: roadmap,
+        name: "RoadMap",
+        skills: ["HTML", "CSS","React","JAVASCRIPT"],
+        liveLink: "https://frontend-3b.vercel.app/",
     },
 ];
 
