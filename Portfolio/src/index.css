@@ -754,7 +754,7 @@ margin-top: 15px;
     font-size: 22px; /* Slightly larger font size for tablets */
   }
   .navbar__href {
-    gap: 10px !important;
+    gap: 8px !important;
     display: block; /* Show navbar links on tablets */
   }
   .project__skils {
