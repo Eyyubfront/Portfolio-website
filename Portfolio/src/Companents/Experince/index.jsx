@@ -1,32 +1,93 @@
 import { Container } from "@mui/material";
 import jedacademy from "../../assets/Experience/jetacademy.jpg";
 import smart from "../../assets/Experience/smart.jpg";
+import tabib from "../../assets/Experience/tab.png";
 import guys from "../../assets/Experience/guys.jpg";
-import { useState } from 'react';
+import { useState } from "react";
 const experienceData = [
+  {
+    image: tabib,
+    role: "Frontend Developer Intern",
+    company: "Digital Medical Solutions” LLC under TABIB",
+    period: "02.12.2024 -03.03.2025",
+    description:
+      "With a team of 3, we have prepared every dynamic feature on the website so that users can choose the language they know and learn how to interact with it.",
+    skills: [
+      "Typescript",
+      "React Js",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "JavaScript",
+      "Branch",
+      "REST API",
+      "Problem Solving",
+      "Strong Search",
+      "Hook Form",
+      "Yup",
+      "Swagger",
+      "Redux Thunk",
+      "Backend Service",
+      "Group Project",
+    ],
+  },
+  {
+    image: guys,
+    role: "Startup • Frontend Developer",
+    company: "Guys Group",
+    period: "07.05.2024 - 07.10.2024",
+    description: "This is a website designed for the safety of people.",
+    skills: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "JavaScript",
+      "Branch",
+      "REST API",
+      "Problem Solving",
+      "Strong Search",
+      "Game Make",
+      "Backend Service",
+      "Group Project",
+    ],
+  },
+  {
+    image: smart,
+    role: "Startup • Frontend Developer",
+    company: "Smart-Biznes MMC",
+    period: "07.05.2024 - 07.10.2024",
+    description:
+      "The main goal of our team is for our property owners to easily access their information.",
+    skills: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "JavaScript",
+      "Branch",
+      "REST API",
+      "Problem Solving",
+      "Strong Search",
+      "Game Make",
+      "Backend Service",
+      "Group Project",
+    ],
+  },
   {
     image: jedacademy,
     role: "Intern • Frontend Developer",
     company: "JET Academy",
     period: "07.17.2023-10.25.2023",
     description: `I would like to share this experience with you. After completing the 5 month course, I decided to join the front-end developer internship program offered by the course. Here I wanted to show my passion and interest in this field by developing myself by developing real projects with html5 and css3. Most importantly, it helped me increase my experience, which was very important to me. I also increased my experience by participating in a hackathon competition. I began to actively work in a team to apply what I learned. I am very happy to see results in these efforts that I continue to do my best and it strengthens my passion in this field even more.`,
-    skills: ["API", "Problem Solving", "Strong Search", "Game Make", "Backend Service", "Group Project"],
-  },
-  {
-    image: guys,
-    role: "Startup • Frontend Developer",
-    company: "Guys Group",
-    period: "May 2024 - Present",
-    description: "I am currently working as a Frontend Developer at a startup called Guys Group. Here we work as a team and try to come up with interesting projects.",
-    skills: ["React.js", "HTML", "CSS", "SCSS", "JavaScript", "Branch", "REST API", "Problem Solving", "Strong Search", "Game Make", "Backend Service", "Group Project"],
-  },
-  {
-    image: smart,
-    role: "Startup • Frontend Developer",
-    company: "Smart-Biznes MMC",
-    period: "May 2024 - Present",
-    description: "I am currently working as a Frontend Developer at a startup called Smart-biznes. Here we work as a team and try to come up with interesting projects. The main goal of our team is for our property owners to easily access their information.",
-    skills: ["React.js", "HTML", "CSS", "SCSS", "JavaScript", "Branch", "REST API", "Problem Solving", "Strong Search", "Game Make", "Backend Service", "Group Project"],
+    skills: [
+      "API",
+      "Problem Solving",
+      "Strong Search",
+      "Game Make",
+      "Backend Service",
+      "Group Project",
+    ],
   },
 ];
 
@@ -65,7 +126,7 @@ const Experience = () => {
                     <div className="border__card"></div>
                   </div>
                   <div className="experience__cards">
-                    <div className="experience__jetcards" >
+                    <div className="experience__jetcards">
                       <div className="jetcard">
                         <div className="experience__cardtop">
                           <img

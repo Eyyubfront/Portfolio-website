@@ -6,25 +6,24 @@ import { useState } from "react";
 const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
 
-  // Menü açma ve kapama işlevi
-  const toggleMenu = () => setOpen(prev => !prev);
+  const toggleMenu = () => setOpen((prev) => !prev);
 
-  // Menü kapalı olduğunda setOpen fonksiyonunu çağırarak menüyü kapatır
   const handleMenuClick = () => setOpen(false);
 
   return (
     <>
       <Hidden mdUp>
         <div className="burger-container">
-          <IconButton
-            className="menu-icon"
-            onClick={toggleMenu}
-          >
+          <IconButton className="menu-icon" onClick={toggleMenu}>
             {open ? <Close /> : <MenuIcon />}
           </IconButton>
           {open && (
-            <div className={`menu-drawer ${open ? 'open' : ''}`}>
-              <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+            <div className={`menu-drawer ${open ? "open" : ""}`}>
+              <div
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="300"
+              >
                 <Stack flexDirection="row" justifyContent="flex-end">
                   <IconButton
                     className="close-icon"
@@ -62,7 +61,10 @@ const BurgerMenu = () => {
                           <h3 className="burgermenunames">Contact</h3>
                         </div>
                       </a>
-                      <a href="https://github.com/Eyyubfront" onClick={handleMenuClick}>
+                      <a
+                        href="https://github.com/Eyyubfront"
+                        onClick={handleMenuClick}
+                      >
                         <div className="navbar__githubeyyub">
                           Github Profile
                         </div>

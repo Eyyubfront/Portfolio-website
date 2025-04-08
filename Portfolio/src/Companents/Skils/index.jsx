@@ -10,24 +10,31 @@ import materialui from "../../assets/Skilss/materialui.svg";
 import redux from "../../assets/Skilss/redux.svg";
 import responsive from "../../assets/Skilss/responsive.svg";
 import restapi from "../../assets/Skilss/restapi.svg";
+import gitlab from "../../assets/Skilss/gitlab.svg";
 import styledcomponents from "../../assets/Skilss/styledcomponents.png";
 import Bootstrap from "../../assets/Skilss/Bootstrap.png";
 import branc from "../../assets/Skilss/branc.png";
+import typescript from "../../assets/Skilss/Typescriptlogo.png";
+import tailwind from "../../assets/Skilss/tailwind.png";
 
 const skillsData = [
   { src: html, name: "HTML" },
   { src: css, name: "CSS" },
+  { src: sass, name: "SASS/SCSS" },
+  { src: tailwind, name: " Tailwind Css" },
+  { src: styledcomponents, name: "Styled Components" },
+  { src: gitlab, name: "Gitlub" },
   { src: github, name: "Github" },
   { src: js, name: "Javascript" },
+  { src: typescript, name: "Typescript" },
   { src: react, name: "React Js" },
-  { src: sass, name: "SASS/SCSS" },
+  { src: redux, name: "Redux/Redux Toolkit" },
+  { src: redux, name: "Redux Thunk" },
+  { src: materialui, name: "Material UI" },
+  { src: Bootstrap, name: "Bootstrap" },
   { src: responsive, name: "Responsive web design" },
   { src: branc, name: "Branches" },
   { src: figma, name: "Figma" },
-  { src: materialui, name: "Material UI" },
-  { src: styledcomponents, name: "Styled Components" },
-  { src: redux, name: "Redux/Redux Toolkit" },
-  { src: Bootstrap, name: "Bootstrap" },
   { src: restapi, name: "Rest API", imgClass: "skilscardsphotoapi" },
 ];
 
