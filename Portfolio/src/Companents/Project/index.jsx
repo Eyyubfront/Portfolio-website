@@ -3,17 +3,17 @@ import travels from "../../assets/Projects/travell.png";
 import texnikamega from "../../assets/Projects/megatexnika.png";
 import digital from "../../assets/Projects/digital.png";
 import roadmap from "../../assets/Projects/roadmap.png";
-import music from "../../assets/Projects/music.png";
+import music from "../../assets/Projects/music.jpg";
 import movie  from "../../assets/Projects/FI-Movie-ideas-2.png";
 import maxresdefault from "../../assets/Projects/calcs.jpg";
 import { Container } from "@mui/material";
 
 const projects = [
     {
-        image: texnikamega,
-        name: "Mega Texnika",
-        skills: ["HTML", "CSS", "AOS", "SWIPER", "Javascript", "React.js"],
-        liveLink: "https://mega-texnika-flame.vercel.app/",
+        image: travels,
+        name: "Travel",
+        skills: ["HTML", "CSS", "Redux Toolkit", "JAVASCRIPT", "React.js"],
+        liveLink: "https://global-travel-aqfd.vercel.app/",
     },
     {
         image: movie,
@@ -22,9 +22,22 @@ const projects = [
         liveLink: "https://movie-rho-nine.vercel.app/",
     },
     {
+        image: texnikamega,
+        name: "Mega Texnika",
+        skills: ["HTML", "CSS", "AOS", "SWIPER", "Javascript", "React.js"],
+        liveLink: "https://mega-texnika-flame.vercel.app/",
+    },
+   
+    {
+        image: maxresdefault,
+        name: "Calculator-Js",
+        skills: ["HTML", "CSS","ALGORITHM","Javascript"],
+        liveLink: "https://calculator-simple-tan.vercel.app/",
+    },
+    {
         image: digital,
         name: "Communicat-E",
-        skills: ["HTML", "CSS", "SASS/SCSS", "Javascript", "React.js"],
+        skills: ["HTML",  "SASS/SCSS", "Javascript", "React.js"],
         liveLink: "https://communicat-e.netlify.app/",
     },
     {
@@ -33,30 +46,20 @@ const projects = [
         skills: ["HTML", "CSS","React","Javascript"],
         liveLink: "https://frontend-3b.vercel.app/",
     },
-    // {
-    //     image: travels,
-    //     name: "Travel",
-    //     skills: ["HTML", "CSS", "AOS", "SWIPER", "JAVASCRIPT", "React.js"],
-    //     liveLink: "https://global-travel-project.vercel.app/",
-    // },
+  
     {
         image: music,
         name: "Music Galery",
         skills: ["HTML", "CSS", "Swiper", "Javascript"],
-        liveLink: "https://music-galery-game.vercel.app/",
+        liveLink: "https://music-galery-game-sbgr.vercel.app/",
     },
-    {
-        image: maxresdefault,
-        name: "Calculator-Js",
-        skills: ["HTML", "CSS","ALGORITHM","Javascript"],
-        liveLink: "https://calculator-simple-tan.vercel.app/",
-    },
-    {
-        image: coper,
-        name: "Coper Pro",
-        skills: ["HTML", "CSS", "AOS", "Swiper", "Javascript", "React.js"],
-        liveLink: "https://copper-projects-nv9q.vercel.app/",
-    },
+  
+    // {
+    //     image: coper,
+    //     name: "Coper Pro",
+    //     skills: ["HTML", "CSS", "AOS", "Swiper", "Javascript", "React.js"],
+    //     liveLink: "https://copper-projects-nv9q.vercel.app/",
+    // },
 ];
 
 const Project = () => {

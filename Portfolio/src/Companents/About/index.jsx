@@ -23,6 +23,9 @@ const About = () => {
                 growth mindset, I am ready to make a meaningful contribution and
                 achieve great things.
               </div>
+              <a href="https://drive.google.com/file/d/145HvL_GffFVT6FAEeW3aOfRvMnVmtWFh/view">
+                <div className="about__cv">Check Resume</div>
+              </a>
             </div>
             <div className="about__right">
               <img className="aboutsphoto" src={aboutphoto} alt="" />
